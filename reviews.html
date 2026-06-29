@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reviews | [Your Shop Name]</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="template-banner">This is a customizable template — swap the name, colors, and content for your own shop.</div>
+
+  <header>
+    <h1>[Your Shop Name]</h1>
+    <nav id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Visit Us</a>
+    </nav>
+    <button id="nav-toggle" aria-label="Toggle navigation menu">☰</button>
+  </header>
+
+  <main>
+    <section class="reviews-page">
+      <p class="eyebrow">What people are saying</p>
+      <h2>Reviews</h2>
+      <p class="menu-note">Placeholder reviews — replace js/reviews-data.js with your real customer feedback.</p>
+
+      <div class="rating-summary">
+        <span class="rating-number" id="rating-average"></span>
+        <span class="rating-out-of">/ 5</span>
+        <span class="rating-count" id="rating-count"></span>
+      </div>
+
+      <div id="reviews-container"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 [Your Shop Name] — Template by you</p>
+  </footer>
+
+  <script src="js/reviews-data.js"></script>
+  <script src="js/reviews-render.js"></script>
+  <script src="js/nav-toggle.js"></script>
+</body>
+</html>
