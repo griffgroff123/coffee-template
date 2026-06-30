@@ -39,7 +39,7 @@ function renderItems() {
 
   categoryBlock.items.forEach(item => {
     const row = document.createElement("div");
-    row.className = "menu-item";
+    row.className = "menu-item reveal";
 
     row.innerHTML = `
       <div class="menu-item-top">
@@ -47,12 +47,24 @@ function renderItems() {
         <span class="menu-item-price">$${item.price.toFixed(2)}</span>
       </div>
       <p class="menu-item-desc">${item.description}</p>
+      <div class="menu-item-spec">
+        <span><b>Origin</b>${item.origin}</span>
+        <span><b>Process</b>${item.process}</span>
+        <span><b>Notes</b>${item.notes}</span>
+      </div>
     `;
 
     list.appendChild(row);
   });
 
   container.appendChild(list);
+
+  // trigger reveal animation on the newly rendered cards
+  requestAnimationFrame(() => {
+    list.querySelectorAll(".reveal").forEach((el, i) => {
+      setTimeout(() => el.classList.add("is-visible"), i * 60);
+    });
+  });
 }
 
 function initMenu() {

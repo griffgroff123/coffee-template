@@ -24,7 +24,7 @@ function renderReviews() {
 
   reviews.forEach(review => {
     const card = document.createElement("div");
-    card.className = "review-card";
+    card.className = "review-card reveal";
 
     card.innerHTML = `
       <div class="review-stars">${renderStars(review.rating)}</div>
@@ -37,3 +37,15 @@ function renderReviews() {
 
 renderAverage();
 renderReviews();
+
+// trigger reveal observer for dynamically-added review cards
+const reviewObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("is-visible");
+      reviewObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll(".review-card.reveal").forEach(el => reviewObserver.observe(el));
