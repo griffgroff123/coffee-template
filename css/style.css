@@ -1,12 +1,12 @@
 /* ===== Tokens ===== */
 :root {
-  --bg: #1C1714;
-  --bg-elevated: #251E19;
-  --text: #F0E9DE;
-  --text-muted: #B8AC9C;
-  --accent: #B5651D;
-  --accent-bright: #D98A3D;
-  --line: #3A322B;
+  --bg: #221c14;
+  --bg-elevated: #2e2518;
+  --text: #ede5d8;
+  --text-muted: #a89880;
+  --accent: #c8712a;
+  --accent-bright: #e08a3c;
+  --line: #3d3020;
   --font-display: "Fraunces", serif;
   --font-body: "Inter", sans-serif;
   --font-mono: "JetBrains Mono", "Courier New", monospace;
@@ -76,7 +76,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 22px 32px;
-  background-color: rgba(28, 23, 20, 0.88);
+  background-color: rgba(34, 28, 20, 0.92);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
 }
@@ -150,7 +150,7 @@ nav#nav-links a:hover::after {
   right: -150px;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(181, 101, 29, 0.18) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(200, 113, 42, 0.14) 0%, transparent 70%);
   pointer-events: none;
 }
 

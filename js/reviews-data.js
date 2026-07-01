@@ -9,7 +9,7 @@ const reviews = [
   },
   {
     rating: 5,
-    summary: "Drove up from Bend for a trail run and stopped here after. The cold brew is absurdly good — no bitterness, just clean and smooth. Already planning the next trip around it."
+    summary: "Drove up from Leavenworth for a trail run and stopped here after. The cold brew is absurdly good — no bitterness, just clean and smooth. Already planning the next trip around it."
   },
   {
     rating: 4,

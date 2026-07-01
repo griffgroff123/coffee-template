@@ -27,7 +27,7 @@ const menu = [
   {
     category: "Food",
     items: [
-      { name: "Almond Croissant", price: 4.50, description: "Baked fresh from a local Bend bakery each morning", origin: "Bend, OR", process: "Baked daily", notes: "Buttery · Toasted Almond" },
+      { name: "Almond Croissant", price: 4.50, description: "Baked fresh from a local Leavenworth bakery each morning", origin: "Leavenworth, WA", process: "Baked daily", notes: "Buttery · Toasted Almond" },
       { name: "Banana Bread", price: 3.75, description: "Slice, toasted if you want it", origin: "House recipe", process: "Baked daily", notes: "Warm Spice · Brown Butter" },
       { name: "Avocado Toast", price: 8.00, description: "Sourdough, smashed avo, chili flake, everything seasoning", origin: "House recipe", process: "Made to order", notes: "Bright · Savory · Crunchy" }
     ]
